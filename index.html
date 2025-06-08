@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <title>Calculator-Trix</title>
+</head>
+<body>
+<div class="wrapper">
+  
+  <div class="calculator">
+    <div class="calculator__result">
+      <input type="text" class="calculator__result-secondary" disabled>
+      <input type="text" class="calculator__result-primary" value="0" readonly>
+    </div>
+    
+    <div class="calculator__mem-buttons">
+      <button class="calculator__m-btn" onclick="memoryClear()">MC</button>
+      <button class="calculator__m-btn" onclick="memoryRecall()">MR</button>
+      <button class="calculator__m-btn" onclick="memoryAdd()">M+</button>
+      <button class="calculator__m-btn" onclick="memorySubtract()">M-</button>
+      <button class="calculator__m-btn" onclick="memoryStore()">MS</button>
+    </div>
+
+    <div class="calculator__buttons">
+      <button class="calculator__btn" data-option="revertDecimal">DEC</button>
+      <button class="calculator__btn" data-option="convertBinary">BIN</button>
+      <button class="calculator__btn" data-option="convertHex">HEX</button>
+      <button class="calculator__btn" data-option="convertOctal">OCT</button>
+
+      <button class="calculator__btn" data-option="percent">%</button>
+      <button class="calculator__btn" data-option="clear">C</button>
+      <button class="calculator__btn calculator__btn--backspace" data-option="undo" style="color: hsl(35, 100%, 55%);">&#x232B;</button>
+      <button onclick="handleArithmeticOperator('/')" class="calculator__btn" data-operator="divide">&divide;</button>
+
+      <button class="calculator__btn calculator__btn--number" data-number>7</button>
+      <button class="calculator__btn calculator__btn--number" data-number>8</button>
+      <button class="calculator__btn calculator__btn--number" data-number>9</button>
+      <button onclick="handleArithmeticOperator('*')" class="calculator__btn" data-operator="multiply">&times;</button>
+      
+      <button class="calculator__btn calculator__btn--number" data-number>4</button>
+      <button class="calculator__btn calculator__btn--number" data-number>5</button>
+      <button class="calculator__btn calculator__btn--number" data-number>6</button>
+      <button onclick="handleArithmeticOperator('-')" class="calculator__btn" data-operator="minus">&minus;</button>
+
+      <button class="calculator__btn calculator__btn--number" data-number>1</button>
+      <button class="calculator__btn calculator__btn--number" data-number>2</button>
+      <button class="calculator__btn calculator__btn--number" data-number>3</button>
+      <button onclick="handleArithmeticOperator('+')" class="calculator__btn" data-operator="plus">+</button>
+
+      <button class="calculator__btn calculator__btn--number" data-option="reverse">+/-</button>
+      <button class="calculator__btn calculator__btn--number" data-number>0</button>
+      <button class="calculator__btn calculator__btn--number" data-option="dot">.</button>
+      <button class="calculator__btn calculator__btn--equals" data-operator="equal">=</button>
+    </div>
+  </div>
+  
+</div>
+<script src="js/main.js"></script>
+<script src="js/arithmetoc.js"></script>
+<script src="js/Calculator.js"></script>
+<script src="js/Calculations.js"></script>
+<script src="js/Memory.js"></script>
+<script src="js/Conversions.js"></script>
+</body>
+</html>

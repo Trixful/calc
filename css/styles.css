@@ -1,0 +1,82 @@
+
+/* General styles */
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    color: #000080; /* Navy text color */
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #1e90ff; /* Dodger blue background */
+    border: 2px solid #ffa500; /* Orange border */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.calculator__result-primary,
+.calculator__result-secondary {
+    background-color: #ffffff; /* White background */
+    border: 2px solid #ffa500; /* Orange border */
+    color: #000080; /* Navy text color */
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.calculator__btn {
+    background-color: #ffa500; /* Orange background */
+    border: none;
+    color: #ffffff; /* White text color */
+    font-size: 1.5em;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator__btn:hover {
+    background-color: #ff8c00; /* Dark orange background on hover */
+}
+
+.calculator__btn:active {
+    background-color: #ff4500; /* Orange red background on active */
+}
+
+.calculator__btn--operator {
+    background-color: #1e90ff; /* Dodger blue background */
+}
+
+.calculator__btn--operator:hover {
+    background-color: #1c86ee; /* Steel blue background on hover */
+}
+
+.calculator__btn--operator:active {
+    background-color: #1874cd; /* Medium blue background on active */
+}
+
+/* Memory history styles */
+#memory-history {
+    background-color: #ffffff; /* White background */
+    border: 2px solid #ffa500; /* Orange border */
+    color: #000080; /* Navy text color */
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#memory-history div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#memory-history div:hover {
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
